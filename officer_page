@@ -7,17 +7,25 @@
     <head>
         <style>
             .header{
-                background-color: #912929;
+               background-color: #912929;
+               color: white;
+               font-family: Helvetica;
+               text-align: right;
+               padding: 10px;
+           }
+           .mainTitle{
+               font-family: Helvetica;
+               text-align: center;
+           }
+            
+            .footer{
+                background-color: black;
                 color: white;
-                font-family: Helvetica;
-                text-align: right;
-                padding: 10px;
-            }
-            .mainTitle{
-                font-family: Helvetica;
                 text-align: center;
-            }
-        </style>
+                padding: 10px;
+                }
+           
+           </style>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
@@ -26,12 +34,12 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <p class = header>Home   Event Calendar   Resources   Opportunities   </p>
-        <h1 class = "mainTitle">Spring 2021 Officers</h1>
+        <pre class = "header"> Home   Event Calendar   Resources   Opportunities   </pre>
+        <h1 class = "mainTitle"> Spring 2021 Officers</h1>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+        <pre class = "footer"> CS Club at CSU Stanislaus <br> csclubatstan@gmail.com </pre>
         <script src="" async defer></script>
     </body>
 </html>
