@@ -16,6 +16,7 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
+				<div className={styles.grid}></div>
 				<Image
 					src="/club.png"
 					alt="Club's Logo with gradient"
@@ -33,7 +34,22 @@ export default function Home() {
 				</Link>
 			</main>
 
-			<section className={styles.about}>
+			<nav className={styles.connect}>
+				<div className={styles.blur}>
+					<h1 className={styles.title}>Connect With Us</h1>
+					<p>We are on Instagram, Discord, and on Warrior Life!</p>
+					<h2>Meetings</h2>
+					<p>We are meeting in person! </p>
+
+					<p>
+						Follow us on Instagram to find out about the most
+						upcoming event: csclubofcsustan
+					</p>
+					<Image src="/instagram.svg" width={100} height={100} />
+				</div>
+			</nav>
+
+			<nav className={styles.about}>
 				<h1 className={styles.title}>About</h1>
 				<div className={styles.grid}>
 					<a
@@ -60,7 +76,7 @@ export default function Home() {
 							back by helping out others with mentorships and
 							coaching. To quickly find yourself a new mentor,
 							head on over to our discord and check out the
-							<code> #mentorhsip</code> channel
+							<code> #mentorship</code> channel
 						</p>
 					</a>
 
@@ -115,7 +131,7 @@ export default function Home() {
 						</p>
 					</a>
 				</div>
-			</section>
+			</nav>
 
 			<section className={styles.officers}>
 				<h1 className={styles.title}>

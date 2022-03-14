@@ -44,13 +44,39 @@
 	line-height: 1.5;
 }
 
+.blur {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(30px);
+	color: white;
+	min-height: 50vh;
+}
+
+.connect {
+	flex: 1;
+	display: flex;
+	font-family: "Sora", sans-serif;
+	/* min-height: 50vh; */
+	/* padding: 1rem; */
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	background-image: url("/club_meeting.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 .container {
 	padding: 0 2rem;
 }
 
 .footer {
-	background: linear-gradient(90deg, #f09819, rgb(44, 42, 42));
-
+	background: linear-gradient(90deg, #f09819, #2c2a2a);
 	display: flex;
 	flex: 1;
 	padding: 2rem 0;
@@ -177,11 +203,6 @@
 		DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.logo {
-	height: 1em;
-	margin-left: 0.5rem;
-}
-
 .main {
 	flex: 1;
 	display: flex;
@@ -192,10 +213,4 @@
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.87);
-}
-
-@media (max-width: 600px) {
-	.grid {
-		grid-template-columns: 2fr;
-	}
 }
