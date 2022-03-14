@@ -29,9 +29,11 @@ export default function Home() {
 					A community of undergrads at Stan State aiming to foster and
 					cultivate technical interest in the Central Valley.
 				</p>
-				<Link href="#About" id="about">
+				<Link href="" id="about">
 					<a className={styles.ghost_button}>Join Now</a>
 				</Link>
+
+				
 			</main>
 
 			<section className={styles.about}>
@@ -123,20 +125,24 @@ export default function Home() {
 					{getSemester()} {getCurrentYear()} Club Officers
 				</h1>
 				<div className={styles.grid}>
-					<div className={styles.card}>
-						<Image
-							src="/club_meeting.png"
-							width={500}
-							height={300}
-						></Image>
+					{/* Giancarlo */}
+					<div className={styles.officers_card}>
+						<Image src="/gian.png" width={300} height={400}></Image>
 						<h2>Giancarlo Garcia Deleon</h2>
 						<h4>Vice President</h4>
-						<p>Blurb</p>
+						<p>
+							Giancarlo is the Vice President of the Computer
+							Science Club with a load of experience under his
+							belt as well as a desire to help others find their
+							path. Main maintainer of the Discord server and
+							developer of this site.
+						</p>
 						<a
+							className={styles.ghost_button}
 							href="https://www.linkedin.com/in/giancarlo-garcia/"
 							target="_blank"
 						>
-							LinkedIn
+							LinkedIn &#8594;
 						</a>
 					</div>
 				</div>
