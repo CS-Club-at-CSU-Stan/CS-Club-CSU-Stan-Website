@@ -4,7 +4,6 @@ import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-	getSemester();
 	return (
 		<div className={(styles.container, styles.gradient)}>
 			<Head>
@@ -32,8 +31,6 @@ export default function Home() {
 				<Link href="" id="about">
 					<a className={styles.ghost_button}>Join Now</a>
 				</Link>
-
-				
 			</main>
 
 			<section className={styles.about}>
